@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Share:400i,700i');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: red;
+}
+
+
+.web-player {
+    height: 100%;
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    z-index: 3;
+    margin-top: 25px;
+}
+
+#player{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        margin: auto;
+}
+
+
+.volume-slide {
+    width: 100%;
+    margin-top: -5px;
+}
+
+.volume-control {
+    display: none;
+}
+
+/* Chrome */
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 35px;
+    width: 45px;
+    background-image: url("fader.png");
+    background-size: cover;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -15px;
+}
+
+/* Firefox */
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 35px;
+    width: 45px;
+    background-image: url("fader.png");
+    background-size: cover;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -15px;
+}
+
+/* IE e Edge */
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #fff;
+    border: 0px solid #000101;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #fff;
+    border: 0px solid #000101;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range]::-ms-thumb {
+    height: 35px;
+    width: 45px;
+    background-image: url("fader.png");
+    background-size: cover;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -15px;
+}
+
+
+/*  */
+
+#playerButton{
+    cursor: pointer;
+}
+
+#playerButton.play .stop_btn{
+    display: none;
+}
+#playerButton.pause .play_btn{
+    display: none;
+}
