@@ -21,7 +21,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-const URL_STREAMING = "http://usa11.fastcast4u.com:5272//;stream.mp3";
+const URL_STREAMING = "https://usa11.fastcast4u.com:5272//;stream.mp3";
 
 window.onload = function () {
     var page = new Page;
